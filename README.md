@@ -61,6 +61,9 @@ makeblastdb -in sequences -title Campy-4G -dbtype nucl -hash_index
 
 ```
 abricate --list
+
+DATABASE  SEQUENCES  DBTYPE  DATE
+Campy-4G   108        nucl    2025-Nov-19
 ```
 
 ## Usage
@@ -70,15 +73,21 @@ abricate --db Campy-4G assembly.fasta
 ```
 
 Recommended:
+--minid: Proportion of gene covered - 80%
+--mincov: Proportion of exact nucleotide matches - 90%
 
 ```
 abricate --db Campy-4G --minid 80 --mincov 90 assembly.fasta
 ```
 
 ## Interpretation
+Abricate produces a tap-separated output file with in column "GENE" the marker genes: 
+rep_00 - replication gene followed by typing number
+mob_00 - mobilization gene followed by typing number
+ssb_00 - single-stranding DNA binding protein gene followed by typing number
+vir_00 - T4SS virD4 gene followed by typing number
 
-Patterns look like:
-
+Typing patterns can be noted as follows:
 ```
 rep59-mob04-ssb03-vir01
 rep07-mob15-ssb08-vir03
@@ -88,12 +97,13 @@ rep07-mob15-ssb08-vir03
 
 ```
 >Campy-4G~~~<GENE_ID>~~~<GENE_TYPE> optional description
-nucleotide sequence of marker gene
+nucleotide sequences of marker genes
 ```
 
 ## Citation
 
-van der Graaf-van Bloois et al. *Manuscript submitted.*
+Campy-4G: van der Graaf-van Bloois et al. *Manuscript submitted.*
+Abricate: T. Seemann. Github https://github.com/tseemann/abricate
 
 ## Contact
 
