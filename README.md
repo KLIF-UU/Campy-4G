@@ -37,10 +37,10 @@ mkdir Campy-4G
 cp /path/to/Campy-4G.fa Campy-4G/sequences
 ```
 
-### 2. Inspect header format (optional)
+### 2. Inspect database (optional)
 
 ```
->Campy-4G~~~GENE_ID~~~TYPE description...
+>Campy-4G~~~GENE_TYPE~~~GENE
 nucleotide sequences of marker genes
 ```
 
@@ -82,22 +82,18 @@ abricate --db Campy-4G --minid 80 --mincov 90 assembly.fasta
 
 ## Interpretation
 Campy-4G produces a tap-separated output file with in column "GENE" the marker genes:   
-rep_00  - replication gene followed by typing number  
-mob_00  - mobilization gene followed by typing number  
-ssb_00  - single-stranding DNA binding protein gene followed by typing number  
-vir_00  - T4SS virD4 gene followed by typing number  
+
+| GENE | description |
+| ---- | ----------- |
+| rep_00 | replication gene followed by typing number |
+| mob_00 | mobilization gene followed by typing number |
+| ssb_00 | single-stranding DNA binding protein gene followed by typing number |
+| vir_00 | T4SS virD4 gene followed by typing number |
 
 Typing patterns can be noted as follows:
 ```
 rep59-mob04-ssb03-vir01
 rep07-mob15-ssb08-vir03
-```
-
-## Database Format
-
-```
->Campy-4G~~~<GENE_ID>~~~<GENE_TYPE> optional description
-nucleotide sequences of marker genes
 ```
 
 ## Citation
