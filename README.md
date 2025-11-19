@@ -72,20 +72,20 @@ Campy-4G   108        nucl    2025-Nov-19
 abricate --db Campy-4G assembly.fasta
 ```
 
-Recommended:
---minid: Proportion of gene covered - 80%
---mincov: Proportion of exact nucleotide matches - 90%
+Recommended:  
+--minid: Proportion of gene covered - 80%  
+--mincov: Proportion of exact nucleotide matches - 90%  
 
 ```
 abricate --db Campy-4G --minid 80 --mincov 90 assembly.fasta
 ```
 
 ## Interpretation
-Abricate produces a tap-separated output file with in column "GENE" the marker genes: 
-rep_00 - replication gene followed by typing number
-mob_00 - mobilization gene followed by typing number
-ssb_00 - single-stranding DNA binding protein gene followed by typing number
-vir_00 - T4SS virD4 gene followed by typing number
+Abricate produces a tap-separated output file with in column "GENE" the marker genes:   
+rep_00 - replication gene followed by typing number  
+mob_00 - mobilization gene followed by typing number  
+ssb_00 - single-stranding DNA binding protein gene followed by typing number  
+vir_00 - T4SS virD4 gene followed by typing number  
 
 Typing patterns can be noted as follows:
 ```
@@ -102,7 +102,7 @@ nucleotide sequences of marker genes
 
 ## Citation
 
-Campy-4G: van der Graaf-van Bloois et al. *Manuscript submitted.*
+Campy-4G: van der Graaf-van Bloois et al. *Manuscript submitted.*  
 Abricate: T. Seemann. Github https://github.com/tseemann/abricate
 
 ## Contact
