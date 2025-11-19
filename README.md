@@ -7,7 +7,7 @@ The scheme contains curated marker genes representing the core *Campylobacter* p
 
 - **rep** – replication genes  
 - **mob** – mobilization / relaxase genes  
-- **ssb** – single-strand DNA binding protein genes  
+- **ssb** – single-stranded DNA binding protein genes  
 - **virD4** – Type IV secretion system coupling protein genes
 
 These markers can be detected directly from contigs using ABRicate, enabling consistent plasmid typing across *Campylobacter* species.
@@ -16,7 +16,7 @@ These markers can be detected directly from contigs using ABRicate, enabling con
 
 ```
 Campy-4G/
- ├── sequences       # FASTA file with all rep, mob, ssb and virD4 markers
+ ├── Campy-4G.fa       # FASTA file with all rep, mob, ssb and virD4 markers
  ├── README.md       # this file
 ```
 
