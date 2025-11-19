@@ -40,7 +40,8 @@ cp /path/to/Campy-4G.fa Campy-4G/sequences
 ### 2. Inspect header format (optional)
 
 ```
->Campy-4G~~~GENE_ID~~~GENE_ACC~~~TYPE description...
+>Campy-4G~~~GENE_ID~~~TYPE description...
+nucleotide sequences of marker genes
 ```
 
 ### 3. Build BLAST database
@@ -83,10 +84,11 @@ rep59-mob04-ssb03-vir01
 rep07-mob15-ssb08-vir03
 ```
 
-## FASTA Format
+## Database Format
 
 ```
->Campy-4G~~~<GENE_ID>~~~<GENE_ACC>~~~<GENE_TYPE> optional description
+>Campy-4G~~~<GENE_ID>~~~<GENE_TYPE> optional description
+nucleotide sequence of marker gene
 ```
 
 ## Citation
