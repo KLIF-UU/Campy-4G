@@ -81,11 +81,11 @@ abricate --db Campy-4G --minid 80 --mincov 90 assembly.fasta
 ```
 
 ## Interpretation
-Abricate produces a tap-separated output file with in column "GENE" the marker genes:   
-rep_00 - replication gene followed by typing number  
-mob_00 - mobilization gene followed by typing number  
-ssb_00 - single-stranding DNA binding protein gene followed by typing number  
-vir_00 - T4SS virD4 gene followed by typing number  
+Campy-4G produces a tap-separated output file with in column "GENE" the marker genes:   
+rep_00  - replication gene followed by typing number  
+mob_00  - mobilization gene followed by typing number  
+ssb_00  - single-stranding DNA binding protein gene followed by typing number  
+vir_00  - T4SS virD4 gene followed by typing number  
 
 Typing patterns can be noted as follows:
 ```
